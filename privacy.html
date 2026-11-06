@@ -18,11 +18,12 @@
 <p>When the Ghostwork TikTok account is connected through TikTok Login Kit, the tool receives:</p>
 <ul>
 <li>basic profile information: account ID, display name, username and profile picture (scopes <code>user.info.basic</code> and <code>user.info.profile</code>)</li>
-<li>access and refresh tokens that let it upload content to that account (scopes <code>video.upload</code>, <code>video.publish</code> and <code>video.create</code>)</li>
+<li>account statistics, such as follower and like counts (scope <code>user.info.stats</code>), and the list of the account's own videos with their view counts (scope <code>video.list</code>). These are used only to show Ghostwork how its own posts are doing.</li>
+<li>access and refresh tokens that let it upload content to that account (scopes <code>video.upload</code> and <code>video.publish</code>)</li>
 </ul>
 
 <h2>How it is used</h2>
-<p>This information is used only to show which account is connected and to upload or publish Ghostwork's own slideshows and videos, either as drafts in the TikTok inbox or as posts. It is not used for advertising or profiling, and it is not shared with or sold to anyone.</p>
+<p>This information is used only to show which account is connected, to show statistics for Ghostwork's own posts, and to upload or publish Ghostwork's own slideshows and videos, either as drafts in the TikTok inbox or as posts. It is not used for advertising or profiling, and it is not shared with or sold to anyone.</p>
 
 <h2>Where it is stored</h2>
 <p>Tokens and profile information are stored in a private, self-hosted database that only Ghostwork can log in to. Media files uploaded for posting are stored on the same server, so that TikTok can download them when a post is made.</p>
